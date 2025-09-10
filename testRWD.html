@@ -36,14 +36,13 @@
     #map {
       height: 100%;
     }
-    /* 手機 (螢幕寬度 <= 576px) */
-    @media (max-width: 576px) {
-    #container {
-      height: 25vh;   /* 改成佔 25% 高度 */
-      min-height: 180px; /* 最小高度也縮小 */
+    /* 手機 (長寬比小於 1 → 高 > 寬) */
+    @media (max-aspect-ratio: 1/1) {
+      #container {
+        height: 25vh;   /* 改成佔 25% 高度 */
+        min-height: 180px;
+      }
     }
-    }
-
     /* 圖片區塊 RWD */
     .image-wrapper {
       width: 100%;
