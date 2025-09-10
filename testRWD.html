@@ -377,7 +377,7 @@ var pois = L.geoJson(null, {
   }
 })
   let global_json;
-  fetch ("http://140.116.41.233:9487/getdata")
+  fetch ("https://joe123890508.github.io/test.geojson")
     .then(response => response.json())
     .then(json => {
       data=json.features;
@@ -523,3 +523,4 @@ document.getElementById("get_gps").addEventListener("click", () => {
 
 </body>
 </html>
+
