@@ -36,6 +36,13 @@
     #map {
       height: 100%;
     }
+    /* 手機 (螢幕寬度 <= 576px) */
+    @media (max-width: 576px) {
+    #container {
+      height: 25vh;   /* 改成佔 25% 高度 */
+      min-height: 180px; /* 最小高度也縮小 */
+    }
+    }
 
     /* 圖片區塊 RWD */
     .image-wrapper {
@@ -106,7 +113,6 @@
     height: 50px;
   }
 }
-
   </style>
 </head>
 <body>
@@ -523,4 +529,3 @@ document.getElementById("get_gps").addEventListener("click", () => {
 
 </body>
 </html>
-
