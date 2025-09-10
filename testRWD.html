@@ -241,9 +241,14 @@
     const original = document.getElementById('form-content');
     const clone = original.cloneNode(true);
     // 移除 clone 中的「確認盤點內容」按鈕
-    const findLandBtn = clone.querySelector('#find_land', '#get_gps');
+    const findLandBtn = clone.querySelector('#find_land');
     if (findLandBtn) {
       findLandBtn.remove();
+    }
+    // 移除 get_gps 按鈕
+    const gpsBtn = cloned.querySelector("#get_gps");
+    if (gpsBtn) {
+      gpsBtn.remove();
     }
 
     // 從原始 map 元素截圖，不要用 clone 裡的
