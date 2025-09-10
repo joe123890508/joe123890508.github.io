@@ -241,7 +241,7 @@
     const original = document.getElementById('form-content');
     const clone = original.cloneNode(true);
     // 移除 clone 中的「確認盤點內容」按鈕
-    const findLandBtn = clone.querySelector('#find_land');
+    const findLandBtn = clone.querySelector('#find_land', '#get_gps');
     if (findLandBtn) {
       findLandBtn.remove();
     }
@@ -528,4 +528,3 @@ document.getElementById("get_gps").addEventListener("click", () => {
 
 </body>
 </html>
-
